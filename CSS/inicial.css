@@ -5,29 +5,26 @@
 
 @font-face {
     font-family: 'Windlass';
-    src: url('./Fonts/Windlass.ttf') format('truetype');
+    src: url('/Fonts/Windlass.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 body {
     background-color: rgb(25, 73, 104);
-    display: grid;
     min-height: 100vh;
     width: 100%;
 }
 
 section {
-    display: grid;
-    position: relative;
     width: 100%;
+    height: 30%;
     padding: 20px 0;
 }
 
 .align {
     display: grid;
-    align-items: center;
-    justify-content: center;
+    place-items: center;
 }
 
 h1 {
@@ -40,7 +37,9 @@ h1 {
     text-align: center;
     filter: brightness(170%);
     cursor: default;
+    font-size: 45px;
     transition: all 0.3s ease;
+    line-height: 1;
 }
 
 .botao {

@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'Windlass';
-    src: url('./Fonts/Windlass.ttf') format('truetype');
+    src: url('/Fonts/Windlass.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -31,8 +31,7 @@ footer {
 }
 
 .ordem-header {
-    display: grid;
-    gap: 40px;
+    gap: 20px;
 }
 
 .ordem-template {
@@ -61,6 +60,8 @@ h1 {
     filter: brightness(170%);
     cursor: default;
     transition: all 0.3s ease;
+    padding: 10px 0;
+    line-height: 1;
 }
 
 h1:hover {
