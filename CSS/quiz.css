@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'Windlass';
-    src: url('/Fonts/Windlass.ttf') format('truetype');
+    src: url('/Fonts/Windlass.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
