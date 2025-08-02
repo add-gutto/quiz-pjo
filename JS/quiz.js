@@ -1,26 +1,63 @@
 import { chales } from './chale.js';
+
 const perguntas = [
-  "Você é uma pessoa muito sociável e carismática?",
-  "Você se considera uma pessoa ambiciosa?",
-  "Você gosta de festas e multidões ou ambientes movimentados?",
-  "Você tenta mostrar que é responsável?",
-  "Você prefere trabalhar sozinho?",
-  "Você tende a se culpar quando algo dá errado, mesmo que não seja diretamente sua responsabilidade?",
-  "Você odeia receber ordens?",
-  "Você é tímido(a) na maioria das vezes e se sente desconfortável com muita atenção?",
-  "Você prefere encontrar soluções pacíficas em vez de confrontos diretos?",
-  "Você é uma pessoa teimosa, raramente mudando sua opinião quando já tomou uma decisão?",
-  "Você usa a emoção mais do que a razão ao tomar decisões?",
-  "Você gosta de fazer os outros rirem e é uma pessoa naturalmente brincalhona?",
-  "Você sente que as pessoas te acham metido(a)?",
-  "Você gosta de passar tempo na natureza?",
-  "Você sente que não gosta de pedir ajuda, preferindo resolver as coisas por conta própria?",
-  "Você prefere não falar sobre seus sentimentos, mantendo-os para si mesmo(a) na maior parte do tempo?",
-  "Você tem tendência a agir por impulso?",
-  "Você se considera uma pessoa confiante e firme nas suas crenças?",
-  "Você gosta de criar coisas e entrar em novos projetos?",
-  "Você é um pouco manipulador(a) e sabe como influenciar situações a seu favor?"
-]
+  "Você gosta de aprender coisas novas?",
+  "Você se considera um bom líder?",
+  "Você costuma usar o humor como mecanismo de defesa?",
+  "Você sente necessidade de ouvir a opinião de outras pessoas?",
+  "Você tem dificuldade em admitir seus erros?",
+  "Você gosta de estar no controle?",
+  "Você se considera uma pessoa centrada nos seus objetivos?",
+  "Você gosta de ambientes agitados?",
+  "Você é uma pessoa rancorosa?",
+  "Você costuma se hiperfocar nas coisas que estuda?",
+  "Você consegue discutir diversos assuntos com facilidade?",
+  "Você é uma pessoa vaidosa?",
+  "Você se recarrega quando está com outras pessoas?",
+  "Você é uma pessoa impulsiva?",
+  "Você é uma pessoa dramática?",
+  "Você se considera manipuladora?",
+  "Você se adapta bem em situações sociais e se enturma com facilidade?",
+  "Você gosta de se expressar através da arte?",
+  "Você tem dificuldade em confiar nos outros?",
+  "Você gosta de ajudar pessoas e animais?",
+  "Você é uma pessoa protetora?",
+  "Você é mais racional do que emocional?",
+  "Você se considera uma pessoa esperta?",
+  "Você tem dificuldade em demonstrar seus sentimentos?",
+  "Você se incomoda em parecer vulnerável?",
+  "Você gosta de adrenalina e esportes radicais?",
+  "Você se considera muito competitiva?",
+  "Você é vista como uma pessoa muito teimosa?",
+  "Você costuma se culpar por tudo, mesmo quando não tem controle sobre a situação?",
+  "Você prefere trabalhar sozinha?",
+  "Você odeia falar sobre seus sentimentos?",
+  "Você é a “faz tudo” do seu grupo de amigos?",
+  "Você gosta de ser o centro das atenções?",
+  "Você é inimiga do fim?",
+  "Você gosta de sair para festas?",
+  "Você é uma pessoa criativa?",
+  "Você é uma pessoa individualista?",
+  "Você é uma pessoa orgulhosa?",
+  "Você tem traços egocêntricos?",
+  "Você se considera mais uma pessoa séria do que amigável?",
+  "Você se envolve com frequência em ideias malucas e arriscadas?",
+  "Você é leal aos seus grupos?",
+  "Você se considera uma pacifista?",
+  "Você sabe agir sob pressão?",
+  "Você é uma pessoa de pavio curto?",
+  "Você é despreocupada com a vida?",
+  "Você costuma ser passiva-agressiva?",
+  "Você é uma pessoa tagarela?",
+  "Você é ambiciosa?",
+  "Você é uma pessoa indecisa?",
+  "Você odeia depender dos outros?",
+  "Você se cobra muito?",
+  "Você se considera uma pessoa vingativa?",
+  "Você sente que depende do álcool com frequência?",
+  "Quando criança, você era extrovertida?"
+];
+
 
 function CarregarQuiz() {
   const quiz = document.getElementById("quiz");
@@ -65,7 +102,7 @@ function processarResultado(e) {
   clone.querySelector("img.image").src = semideus.image_url;
   clone.querySelector("img.image").alt = semideus.deus;
   clone.querySelector(".group-itens h2").innerHTML = `Semideus do chalé de ${semideus.deus}`;
-  clone.querySelector("p.texto-resultado").textContent = semideus.descricao;
+  clone.querySelector("p.texto-resultado").textContent = respostas;
   const compat = Math.round((1 - (semideus.resultado / (6 * perguntas.length))) * 100);
   clone.querySelector("h3").textContent = `Compatibilidade: ${compat}%`;
   const containerChales = clone.querySelector(".group-chales");
