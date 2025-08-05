@@ -102,7 +102,7 @@ function processarResultado(e) {
   clone.querySelector("img.image").src = semideus.image_url;
   clone.querySelector("img.image").alt = semideus.deus;
   clone.querySelector(".group-itens h2").innerHTML = `Semideus do chalé de ${semideus.deus}`;
-  clone.querySelector("p.texto-resultado").textContent = respostas;
+  clone.querySelector("p.texto-resultado").textContent = semideus.descricao;
   const compat = Math.round((1 - (semideus.resultado / (6 * perguntas.length))) * 100);
   clone.querySelector("h3").textContent = `Compatibilidade: ${compat}%`;
   const containerChales = clone.querySelector(".group-chales");
