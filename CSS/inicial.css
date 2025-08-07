@@ -23,8 +23,10 @@ section {
 }
 
 .align {
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
@@ -37,7 +39,7 @@ h1 {
     text-align: center;
     filter: brightness(170%);
     cursor: default;
-    font-size: 45px;
+    font-size: 40px;
     transition: all 0.3s ease;
     line-height: 1;
 }

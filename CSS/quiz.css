@@ -13,21 +13,26 @@
 body {
     display: grid;
     gap: 20px;
-    min-height: 100vh;
     width: 100%;
     background-color: #E7DFD5;
     font-family: 'Times New Roman', Times, serif;
 }
 
 header {
-    height: 400px;
+    height: auto;
     background-color: rgb(25, 73, 104);
+    padding: 10px;
 }
 
 footer {
     background-color: rgb(25, 73, 104);
     height: 100px;
     color: #E7DFD5;
+}
+
+a {
+    color: #E7DFD5;
+    text-decoration-line: none;
 }
 
 .ordem-header {
@@ -56,7 +61,7 @@ h1 {
     -webkit-background-clip: text;
     text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
     font-weight: bold;
-    font-size: 38px;
+    font-size: 30px;
     filter: brightness(170%);
     cursor: default;
     transition: all 0.3s ease;
@@ -200,12 +205,12 @@ fieldset {
 
 .text-verde {
     grid-area: agre-disagree;
-    justify-self: start;
+    justify-self: end;
 }
 
 .text-roxo {
     grid-area: agre-disagree;
-    justify-self: end;
+    justify-self: start;
 }
 
 .texto {
@@ -296,17 +301,17 @@ p {
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
         grid-template-areas:
-            "agree options disagree";
+            "disagree options agree";
     }
 
     .texto.text-verde {
         grid-area: agree;
-        justify-self: end;
+        justify-self: start;
     }
 
     .texto.text-roxo {
         grid-area: disagree;
-        justify-self: start;
+        justify-self: end;
     }
 
     .options {
