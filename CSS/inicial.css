@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: rgb(25, 73, 104);
+    background-color: #0D3B66;
     min-height: 100vh;
     width: 100%;
 }
@@ -31,6 +31,7 @@ section {
 
 h1 {
     background: linear-gradient(to top, #515050, #a7a5a5);
+    font-family: Windlass;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
@@ -44,12 +45,13 @@ h1 {
 }
 
 .botao {
-    background-color: rgb(36, 193, 233);
+    background-color: #3FA7D6;
     border: none;
     color: rgb(236, 234, 231);
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
+    font-weight: bold;
+    font-size: 17px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: all 0.2s ease;
@@ -57,12 +59,12 @@ h1 {
 }
 
 .botao:hover {
-    background-color: rgb(35, 127, 207);
+    background-color: #1A1A40;
     transform: scale(1.05);
 }
 
 .botao:active {
-    background-color: rgb(64, 25, 235);
+    background-color: #BCC6CC;
     transform: scale(0.95);
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 
